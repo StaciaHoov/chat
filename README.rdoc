@@ -1,0 +1,3 @@
+Chat
+
+Models: User, Chatroom, ChatroomUser(join), Message

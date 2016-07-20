@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  chatroom_id: 
+  user_id: 
+  body: MyText
+
+two:
+  chatroom_id: 
+  user_id: 
+  body: MyText
