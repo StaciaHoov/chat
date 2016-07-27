@@ -1,5 +1,0 @@
-Chat
-
-Models: User, Chatroom, ChatroomUser(join), Message
-
-gems devise-bootstrapped
