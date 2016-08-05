@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -44,19 +44,19 @@
     </div>
   </nav>
   
-  <div class="fluid-container">
+  <div class="fluid-container" style="margin-top: 70px">
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-2" style="position: fixed; top: 70px; left: 0;">
         <% if user_signed_in? %>
           <h5>Chatrooms</h5>
           <ul>
             <% current_user.chatrooms.each do |chatroom| %>
-              <li><%= link_to chatroom.name, "#" %></li>
+              <li><%= link_to chatroom.name, chatroom %></li>
             <% end %>
           </ul>
         <% end %>
       </div>
-      <div class="col-md-10">
+      <div class="col-md-10 col-sm-offset-2">
         <%= yield %>
       </div>
     </div>

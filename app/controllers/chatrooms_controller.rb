@@ -10,6 +10,7 @@ class ChatroomsController < ApplicationController
   # GET /chatrooms/1
   # GET /chatrooms/1.json
   def show
+      @messages = @chatroom.messages.order(created_at: :desc).limit(100).reverse # Grab most recent then reverse order to show oldest last 
   end
 
   # GET /chatrooms/new
